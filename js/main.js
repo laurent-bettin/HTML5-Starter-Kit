@@ -1,15 +1,15 @@
 var front = {};
 
 (function (context) {
-	"use strict";
+    "use strict";
 
-	var ui = {
-		init : function () {
-			$('html').removeClass('no-js');
-		}
-	};
+    var ui = {
+        init : function () {
+            $('html').removeClass('no-js');
+        }
+    };
 
-	context.ui = ui;
+    context.ui = ui;
 
 })(front)
 
