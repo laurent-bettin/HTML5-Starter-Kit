@@ -1,5 +1,25 @@
 @charset "utf-8";
-/*! normalize.css 2011-11-04T15:38 UTC - http://github.com/necolas/normalize.css */
+/*! base: normalize.css v3.0.0 | MIT License | git.io/normalize */
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+html {
+    -webkit-text-size-adjust: 100%; /* 1 */
+    -ms-text-size-adjust: 100%; /* 1 */
+}
+
+/*
+ * Remove default margin.
+ */
+body {
+    margin: 0;
+    padding: 0;
+}
+
 /* ==========================================================================
 HTML5 display definitions
 ========================================================================== */
@@ -22,22 +42,15 @@ summary {
 }
 
 /*
- * Correct `inline-block` display not defined in IE 8/9.
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
 audio,
 canvas,
+progress,
 video {
-    display: inline-block;
-}
-
-/*
- * Remove the gap between images, videos, audio and canvas and the bottom of
- * their containers: h5bp.com/i/440
- */
-audio,
-canvas,
-video {
-    vertical-align: middle;
+    display: inline-block; /* 1 */
+    vertical-align: baseline; /* 2 */
 }
 
 /*
@@ -56,26 +69,6 @@ audio:not([controls]) {
 [hidden],
 template {
     display: none;
-}
-
-/* =============================================================================
-   Base
-   ========================================================================== */
-/*
- * 1. Prevents iOS text size adjust after orientation change, without disabling user zoom
- *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
- */
-html {
-    -webkit-text-size-adjust: 100%; /* 1 */
-    -ms-text-size-adjust: 100%; /* 1 */
-}
-
-/*
- * Remove default margin.
- */
-body {
-    margin: 0;
-    padding: 0;
 }
 
 /* =============================================================================
@@ -108,17 +101,6 @@ a:active {
    Typography
    ========================================================================== */
 /*
- * Addresses font-family inconsistency between 'textarea' and other form elements.
- */
-body,
-button,
-input,
-select,
-textarea {
-    font-family: sans-serif;
-}
-
-/*
  * Addresses styling not present in IE7/8/9, S5, Chrome
  */
 abbr[title] {
@@ -138,16 +120,6 @@ strong {
  */
 dfn {
     font-style: italic;
-}
-
-/**
-* Address differences between Firefox and other browsers.
-* Known issue: no IE 6/7 normalization.
-*/
-hr {
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    height: 0;
 }
 
 /*
@@ -196,7 +168,7 @@ sub {
    ========================================================================== */
 /*
  * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
- * 2. Remove the gap between images, videos, audio and canvas and the bottom of their containers
+ * 2. Remove the gap between images and the bottom of their containers
  */
 img {
     border: 0; /* 1 */
@@ -211,7 +183,7 @@ svg:not(:root) {
 }
 
 /* =============================================================================
-   Figures
+   Grouping content
    ========================================================================== */
 /*
  * Addresses margin not present in IE6/7/8/9, S5, O11
@@ -220,20 +192,26 @@ figure {
     margin: 0;
 }
 
-/* =============================================================================
-   Form
-   ========================================================================== */
-/*
-* Remove default fieldset styles.
+/**
+* Address differences between Firefox and other browsers.
+* Known issue: no IE 6/7 normalization.
 */
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
 }
 
+/* =============================================================================
+   Forms
+   ========================================================================== */
+/*
+* Remove default fieldset and legend styles.
+*/
+fieldset,
 legend {
     border: 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -246,6 +224,7 @@ button,
 input,
 select,
 textarea {
+    color: inherit;
     font-family: inherit; /* 1 */
     font-size: 100%; /* 2 */
     margin: 0; /* 3 */
@@ -326,7 +305,6 @@ input::-moz-focus-inner {
 /*
  * 1. Removes default vertical scrollbar in IE6/7/8/9
  * 2. Improves readability and alignment in all browsers
- * 3. Allow only vertical resizing
  */
 textarea {
     overflow: auto; /* 1 */
