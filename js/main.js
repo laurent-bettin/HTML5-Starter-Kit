@@ -1,6 +1,4 @@
-var front = {};
-
-(function (context) {
+var front = (function ($) {
     "use strict";
 
     var ui = {
@@ -9,9 +7,9 @@ var front = {};
         }
     };
 
-    context.ui = ui;
+    return ui;
 
-})(front)
+})(jQuery)
 
-$(document).ready(front.ui.init);
-//$(window).load(function() { front.ui.init() });
+$(document).ready(front.init);
+//$(window).load(function() { front.init() });
