@@ -3,6 +3,7 @@ var front = (function ($) {
 
     var ui = {
         init: function () {
+            var _this = this;
             $('html').removeClass('no-js');
         }
     };
