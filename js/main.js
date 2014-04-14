@@ -2,7 +2,7 @@ var front = (function ($) {
     "use strict";
 
     var ui = {
-        init : function () {
+        init: function () {
             $('html').removeClass('no-js');
         }
     };
