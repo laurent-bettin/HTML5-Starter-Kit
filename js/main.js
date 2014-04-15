@@ -1,3 +1,5 @@
+jQuery.noConflict();
+
 var front = (function ($) {
     "use strict";
 
@@ -12,5 +14,5 @@ var front = (function ($) {
 
 })(jQuery)
 
-$(document).ready(front.init);
+jQuery(document).ready(front.init);
 //$(window).load(function() { front.init() });
