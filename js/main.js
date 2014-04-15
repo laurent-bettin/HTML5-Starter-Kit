@@ -10,9 +10,11 @@ var front = (function ($) {
         }
     };
 
-    return ui;
+    return {
+        ui: ui
+    };
 
-})(jQuery)
+})(jQuery);
 
-jQuery(document).ready(front.init);
+jQuery(document).ready(front.ui.init);
 //$(window).load(function() { front.init() });
