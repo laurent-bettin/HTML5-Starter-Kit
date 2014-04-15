@@ -16,5 +16,5 @@ var front = (function ($) {
 
 })(jQuery);
 
-jQuery(document).ready(front.ui.init);
+jQuery(document).ready(jQuery.proxy(front.ui.init, front.ui));
 //$(window).load(function() { front.init() });
