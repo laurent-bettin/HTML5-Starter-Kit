@@ -1,26 +1,6 @@
 @charset "utf-8";
 /* =============================================================================
 
-    css minifier : http://www.cleancss.com/
-
-    collection de polices : http://www.alsacreations.com/article/lire/631-quelles-polices-pour-un-site-web.html
-
-    Serif fonts
-        font-family: Times, "Times New Roman", "Liberation Serif", FreeSerif, serif;
-        font-family: Georgia, "DejaVu Serif", Norasi, serif;
-
-    Sans-serif fonts
-        font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
-        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-        font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Luxi Sans", sans-serif;
-        font-family: Tahoma, Geneva, Kalimati, sans-serif;
-        font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
-        font-family: Impact, "Arial Black", sans-serif;
-
-    Monospace Fonts
-        font-family: Courier, "Courier New", FreeMono, "Liberation Mono", monospace;
-        font-family: Monaco, "DejaVu Sans Mono", "Lucida Console", "Andale Mono", monospace;
-
     Few default class name
         #header {}
         #footer {}
