@@ -115,6 +115,10 @@ caption {
     margin: 0 0 1.5em;
 }
 
+table {
+    margin-bottom: 1.5em;
+}
+
 /* avoid margins on nested elements */
 li p,
 li ul,
