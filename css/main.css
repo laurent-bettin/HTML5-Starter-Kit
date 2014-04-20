@@ -33,9 +33,14 @@
 /* =============================================================================
     Default styles
     ========================================================================== */
+html {
+    font-size: 62.5%;
+}
+
 body {
     background: #fff;
     color: #000;
+    font: 1.4em/1.5 Helvetica, Arial, sans-serif;
 }
 
 /*
@@ -51,47 +56,63 @@ a:active {
     color: #da0019;
 }
 
-/* =============================================================================
-   From http://www.alsacreations.com/astuce/lire/654-feuille-de-styles-de-base.html
-   ========================================================================== */
+/*http://soqr.fr/vertical-rhythm/
 /* =============================================================================
    Titles
    ========================================================================== */
-h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 1em;
-    font-weight: 700;
-    font-style: normal;
-}
-
 h1 {
-    font-size: 1.75em;
+    font-size: 1.8571em; /* equiv 26px */
+    line-height: 1.6154em;
+    margin: 0 0 .8077em;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.7143em; /* equiv 24px */
+    line-height: 1.75em;
+    margin: 0 0 .875em;
 }
 
 h3 {
-    font-size: 1.25em;
+    font-size: 1.5714em; /* equiv 22px */
+    line-height: 1.909em;
+    margin: 0 0 .9545em;
 }
 
-h4, h5, h6 {
-    font-size: 1em;
+h4 {
+    font-size: 1.4286em; /* equiv 20px */
+    line-height: 1.05em;
+    margin: 0 0 1.05em;
+}
+
+h5 {
+    font-size: 1.2857em; /* equiv 18px */
+    line-height: 1.1667em;
+    margin: 0 0 1.1667em;
+}
+
+h6 {
+    font-size: 1.1429em; /* equiv 16px */
+    line-height: 1.3125em;
+    margin: 0 0 1.3125em;
 }
 
 /* =============================================================================
    Margins
    ========================================================================== */
+p,
 ul,
 ol,
 dl,
-p,
-blockquote {
-    margin: 0 0 .75em;
-}
-
-dd {
-    margin: 0 0 .25em;
+blockquote,
+pre,
+td,
+th,
+label,
+textarea,
+caption {
+    font-size: 1em; /* equiv 14px */
+    line-height: 1.5em;
+    margin: 0 0 1.5em;
 }
 
 /* avoid margins on nested elements */
