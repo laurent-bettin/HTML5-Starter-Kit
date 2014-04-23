@@ -200,6 +200,20 @@ img {
     vertical-align: middle;
 }
 
+img.float-left {
+    margin-right: .9em;
+    margin-top: .9em;
+}
+
+img.float-right {
+    margin-left: .9em;
+    margin-top: .9em;
+}
+
+img[class^="float-"]:first-child {
+    margin-top: 0;
+}
+
 /* =============================================================================
    various
    ========================================================================== */
