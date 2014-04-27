@@ -1,5 +1,21 @@
 @charset "utf-8";
 
+/*IE9.js add extra margins on htlm5 elements*/
+body article,
+body aside,
+body details,
+body figcaption,
+body figure,
+body footer,
+body header,
+body hgroup,
+body main,
+body nav,
+body section,
+body summary {
+    margin: 0;
+}
+
 /*http://blog.neatlysliced.com/2008/03/hr-image-replacement/*/
 .text-editor hr {
     display: list-item;
