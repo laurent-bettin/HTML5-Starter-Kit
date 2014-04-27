@@ -93,6 +93,18 @@ hr {
     padding: 0;
 }
 
+/*
+* Remove the gap between images, videos, audio and canvas and the bottom of
+* their containers: h5bp.com/i/440
+*/
+audio,
+canvas,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
 /* =======================
    Forms
    =======================*/
@@ -114,7 +126,6 @@ textarea {
 img {
     height: auto;
     max-width: 100%;
-    vertical-align: middle;
 }
 
 /*http://soqr.fr/vertical-rhythm/
