@@ -264,19 +264,6 @@ img[class^="float-"]:first-child {
     clear: both;
 }
 
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
 .float-left {
     float: left;
 }
