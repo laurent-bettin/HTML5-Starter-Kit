@@ -350,8 +350,8 @@ source https://github.com/stubbornella/oocss/blob/master/core/spacing/space.css
     p,
     h2,
     h3 {
-        orphans: 3;
-        widows: 3;
+        orphans: 3; /*minimum number of lines in a paragraph split on the old page.*/
+        widows: 3; /*minimum number of lines in a paragraph split on the new page.*/
     }
 
     pre,
