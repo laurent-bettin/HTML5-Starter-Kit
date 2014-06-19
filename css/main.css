@@ -202,31 +202,26 @@ li ol {
 .smaller {
     font-size: .7143em; /* equiv 10px */
     line-height: 2.1em;
-    margin: 2.1em 0;
 }
 
 .small {
     font-size: .8571em; /* equiv 12px */
     line-height: 1.75em;
-    margin: 1.75em 0;
 }
 
 .big {
     font-size: 1.1429em; /* equiv 16px */
     line-height: 1.3125em;
-    margin: 1.3125em 0;
 }
 
 .bigger {
     font-size: 1.2857em; /* equiv 18px */
     line-height: 1.1667em;
-    margin: 1.1667em 0;
 }
 
 .biggest {
     font-size: 1.4286em; /* equiv 20px */
     line-height: 1.05em;
-    margin: 1.05em 0;
 }
 
 /* =============================================================================
